@@ -17,3 +17,5 @@ module RailsAmusementPark
     # the framework and any gems in your application.
   end
 end
+# to solve user no admin attribute problem
+Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
