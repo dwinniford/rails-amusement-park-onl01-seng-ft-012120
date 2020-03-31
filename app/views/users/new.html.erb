@@ -1,2 +1,24 @@
-<h1>Users#new</h1>
+<h1>User Signup</h1>
 <p>Find me in app/views/users/new.html.erb</p>
+
+<%= form_for @user do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %> <br>
+<%= f.label :height %>
+<%= f.number_field :height %>  <br>
+<%= f.label :happiness %>
+<%= f.number_field :happiness %> <br>
+<%= f.label :nausea %>
+<%= f.number_field :nausea %>
+<br>
+<%= f.label :tickets %>
+<%= f.number_field :tickets %>
+<br>
+<%= f.label :admin %>
+<%= f.check_box :admin %>
+<br>
+<%= f.label :password %>
+<%= f.password_field :password %>
+<%= f.submit "Create User "%>
+
+<% end %>
